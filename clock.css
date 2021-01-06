@@ -1,0 +1,54 @@
+#container{
+    position: relative;
+    background: url(clock.png) no-repeat;
+    filter: invert(120%) sepia(10%)  brightness(95%) saturate(3000%);
+    background-size: 100%;
+    height: 40vw;
+    width: 34vw;
+    margin: auto;
+    
+}
+
+#hour , #minute , #second{
+     position: absolute;
+     background: black;
+     border-radius: 10px;
+     
+     /* to rotate the clock hand from bottom othrwise they will rotate from center */
+
+     transform-origin: bottom;  
+
+     
+}
+
+#hour{
+    height: 23%;
+    width: 1.5%;
+    top: 32%;
+    left: 49.6%;
+    opacity: 0.8;
+     
+
+}
+
+#minute{
+    height: 27%;
+    width: 1.2%;
+    top: 28%;
+    left: 49.9%;
+    opacity: 0.8;
+    
+    
+
+}
+
+
+#second{
+    height: 23%;
+    width: 1%;
+    top: 32%;
+    left: 49.9%;
+    opacity: 0.8;  
+
+}
+
